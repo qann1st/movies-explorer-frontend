@@ -1,8 +1,8 @@
 {
   "name": "movies-explorer-frontend",
-  "homepage": "https://github.com/qann1st/movies-explorer-frontend",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://qann1st.github.io/movies-explorer-frontend",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
