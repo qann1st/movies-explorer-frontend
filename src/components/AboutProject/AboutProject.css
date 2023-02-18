@@ -1,5 +1,11 @@
 .about {
-  padding: 110px 0 140px 0;
+  padding: 110px 0 140px;
+}
+
+@media screen and (max-width: 1023px) {
+  .about {
+    padding: 90px 0 110px;
+  }
 }
 
 .about__title {
@@ -12,10 +18,23 @@
   margin: 0;
 }
 
+@media screen and (max-width: 767px) {
+  .about__title {
+    margin: 0 0 60px;
+  }
+}
+
 .about__info {
   display: flex;
   gap: 40px;
   padding-bottom: 110px;
+}
+
+@media screen and (max-width: 767px) {
+  .about__info {
+    flex-direction: column;
+    gap: 56px;
+  }
 }
 
 .about__info_container {
@@ -23,6 +42,12 @@
   flex-direction: column;
   gap: 26px;
   margin: 70px 0 0;
+}
+
+@media screen and (max-width: 767px) {
+  .about__info_container {
+    margin: 0;
+  }
 }
 
 .about__info_title {
@@ -34,12 +59,26 @@
   padding: 0;
 }
 
+@media screen and (max-width: 767px) {
+  .about__info_title {
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
 .about__info_paragraph {
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
   margin: 0;
   padding: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .about__info_paragraph {
+    font-size: 11px;
+    line-height: 16px;
+  }
 }
 
 .about__progressbar {
@@ -50,16 +89,32 @@
 .about__progressbar_left {
   flex: 1;
   background-color: #2be080;
-  padding: 9px 0;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .about__progressbar_left {
+    flex: 2;
+  }
 }
 
 .about__progressbar_left_text {
   margin: 0;
   padding: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+@media screen and (max-width: 767px) {
+  .about__progressbar_left {
+    font-size: 11px;
+    line-height: 13px;
+  }
 }
 
 .about__progressbar_left_paragraph {

@@ -3,12 +3,19 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 18px 0 38px 0;
+  padding: 18px 70px 38px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 1023px) {
+  .header {
+    padding: 18px 30px 38px;
+  }
 }
 
 @media screen and (max-width: 767px) {
   .header {
-    padding: 18px 0 32px 0;
+    padding: 18px 14px 32px;
   }
 }
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import AboutMe from '../components/AboutMe/AboutMe';
 import AboutProject from '../components/AboutProject/AboutProject';
 import Header from '../components/Header/Header';
 import Promo from '../components/Promo/Promo';
@@ -9,8 +10,11 @@ const Main = () => {
     <>
       <Header />
       <Promo />
-      <AboutProject />
-      <Techs />
+      <div className="wrapper">
+        <AboutProject />
+        <Techs />
+        <AboutMe />
+      </div>
     </>
   );
 };
