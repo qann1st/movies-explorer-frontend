@@ -2,7 +2,7 @@
 
 # Ссылки
 
-- [GitHub Pages](https://qann1st.github.io/movies-explorer-api)
+- [GitHub Pages](https://qann1st.github.io/movies-explorer-frontend/)
 
 ## Запуск проекта
 
