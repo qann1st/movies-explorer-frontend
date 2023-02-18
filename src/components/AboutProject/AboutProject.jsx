@@ -21,6 +21,16 @@ const AboutProject = () => {
           </p>
         </div>
       </div>
+      <div className="about__progressbar">
+        <div className="about__progressbar_left">
+          <p className="about__progressbar_left_text">1 неделя</p>
+          <p className="about__progressbar_left_paragraph">Back-end</p>
+        </div>
+        <div className="about__progressbar_right">
+          <p className="about__progressbar_right_text">4 недели</p>
+          <p className="about__progressbar_right_paragraph">Front-end</p>
+        </div>
+      </div>
     </div>
   );
 };

@@ -1,0 +1,12 @@
+.techs {
+  padding: 100px 0;
+}
+
+.techs__title {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 27px;
+  letter-spacing: -0.04em;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #000;
+}

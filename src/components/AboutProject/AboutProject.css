@@ -1,5 +1,5 @@
 .about {
-  padding: 110px 0;
+  padding: 110px 0 140px 0;
 }
 
 .about__title {
@@ -15,6 +15,7 @@
 .about__info {
   display: flex;
   gap: 40px;
+  padding-bottom: 110px;
 }
 
 .about__info_container {
@@ -39,4 +40,61 @@
   line-height: 20px;
   margin: 0;
   padding: 0;
+}
+
+.about__progressbar {
+  width: 100%;
+  display: flex;
+}
+
+.about__progressbar_left {
+  flex: 1;
+  background-color: #2be080;
+  padding: 9px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.about__progressbar_left_text {
+  margin: 0;
+  padding: 0;
+}
+
+.about__progressbar_left_paragraph {
+  margin: 0;
+  padding: 0;
+  bottom: -28px;
+  position: absolute;
+  color: #a0a0a0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+}
+
+.about__progressbar_right {
+  flex: 3;
+  background-color: #f2f2f2;
+  padding: 9px 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about__progressbar_right_text {
+  margin: 0;
+  padding: 0;
+}
+
+.about__progressbar_right_paragraph {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: -28px;
+  color: #a0a0a0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
 }
