@@ -4,6 +4,7 @@ import AboutProject from '../components/AboutProject/AboutProject';
 import Header from '../components/Header/Header';
 import Promo from '../components/Promo/Promo';
 import Techs from '../components/Techs/Techs';
+import Footer from '../components/Footer/Footer';
 
 const Main = () => {
   return (
@@ -14,6 +15,7 @@ const Main = () => {
         <AboutProject />
         <Techs />
         <AboutMe />
+        <Footer />
       </div>
     </>
   );

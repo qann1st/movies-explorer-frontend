@@ -5,21 +5,15 @@ const NavTab = () => {
   return (
     <nav className="navtab__nav">
       <ul className="navtab__nav_list">
-        <li className="navtab__nav_list_element">
-          <a className="navtab__nav_list_element_link" href="#about">
-            О проекте
-          </a>
-        </li>
-        <li className="navtab__nav_list_element">
-          <a className="navtab__nav_list_element_link" href="#technologies">
-            Технологии
-          </a>
-        </li>
-        <li className="navtab__nav_list_element">
-          <a className="navtab__nav_list_element_link" href="#student">
-            Студент
-          </a>
-        </li>
+        <a className="navtab__nav_list_element_link" href="#about">
+          <li className="navtab__nav_list_element">О проекте</li>
+        </a>
+        <a className="navtab__nav_list_element_link" href="#technologies">
+          <li className="navtab__nav_list_element">Технологии</li>
+        </a>
+        <a className="navtab__nav_list_element_link" href="#student">
+          <li className="navtab__nav_list_element">Студент</li>
+        </a>
       </ul>
     </nav>
   );

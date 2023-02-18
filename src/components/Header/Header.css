@@ -30,7 +30,7 @@
 }
 
 .header__logo:hover {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
 .header__buttons {
@@ -66,7 +66,7 @@
 }
 
 .header__buttons_register:hover {
-  opacity: 0.7;
+  opacity: 0.5;
 }
 
 .header__buttons_login {
@@ -93,5 +93,5 @@
 }
 
 .header__buttons_login:hover {
-  opacity: 0.7;
+  opacity: 0.5;
 }
