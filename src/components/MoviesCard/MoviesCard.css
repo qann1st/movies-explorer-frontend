@@ -1,0 +1,76 @@
+.card {
+  width: 100%;
+  min-width: none;
+  position: relative;
+}
+
+.card__image {
+  display: block;
+  width: 100%;
+  border-radius: 6px;
+}
+
+.card__name {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+.card__duration {
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 10px;
+  color: #a0a0a0;
+  margin: 0;
+  padding: 0;
+}
+
+.card__description {
+  padding: 0 14px;
+  display: flex;
+  justify-content: space-between;
+  height: 16px;
+  align-items: center;
+  margin-top: 14px;
+}
+
+.card__btn_save {
+  position: absolute;
+  background-color: #fff;
+  border: none;
+  right: 14px;
+  top: 14px;
+  padding: 6px 7px;
+  border-radius: 30px;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 9px;
+  width: 72px;
+  height: 21px;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.card__btn_save:hover {
+  opacity: 0.5;
+}
+
+.card__saved {
+  background-image: url(../../images/saved.svg);
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  background-color: #ee3465;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 30px;
+  border: none;
+  right: 14px;
+  top: 14px;
+  width: 21px;
+  height: 21px;
+  opacity: 1;
+}

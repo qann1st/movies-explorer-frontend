@@ -8,7 +8,6 @@ const AboutMe = () => {
       <h2 className="student__title">Студент</h2>
       <div className="student__about">
         <img className="student__photo" src={photo} alt="Фото студента" />
-
         <div className="student__info">
           <h3 className="student__name">Владислав</h3>
           <p className="student__name_description">Фронтенд-разработчик, 14 лет</p>

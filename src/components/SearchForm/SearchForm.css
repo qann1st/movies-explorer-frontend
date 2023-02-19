@@ -1,0 +1,120 @@
+.search__form {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 1px solid #e8e8e8;
+  padding-bottom: 70px;
+}
+
+.search__input {
+  width: 100%;
+  border-radius: 40px;
+  border: none;
+  background-color: #f9f9f9;
+  padding: 14px 22px;
+  box-sizing: border-box;
+  margin-top: 22px;
+  height: 46px;
+  outline: none;
+  margin-bottom: 40px;
+}
+
+.search__input::placeholder {
+  color: #a0a0a0;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 17px;
+}
+
+.search__button {
+  background-color: #ff6838;
+  width: 80px;
+  height: 34px;
+  position: absolute;
+  top: 28px;
+  right: 6px;
+  border-radius: 48px;
+  background-image: url(../../images/search.svg);
+  background-repeat: no-repeat;
+  background-size: 25px 15px;
+  background-position: center;
+  cursor: pointer;
+  border: none;
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.search__button:hover {
+  opacity: 0.5;
+}
+
+.search__checkbox {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.search__checkbox_label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.search__checkbox_image {
+  background: #ebebeb;
+  border-radius: 20px;
+  width: 36px;
+  height: 20px;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.search__checkbox_image:hover {
+  opacity: 0.5;
+}
+
+.search__checkbox_switcher {
+  z-index: 2;
+  position: absolute;
+  background: #ffffff;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  top: 2px;
+  bottom: 2px;
+  transform: translateX(2px);
+  transition: all 0.2s ease-in-out;
+}
+
+.search__checkbox_image_checked {
+  background-color: #2be080;
+  border-radius: 20px;
+  width: 36px;
+  height: 20px;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.search__checkbox_image_checked:hover {
+  opacity: 0.5;
+}
+
+.search__checkbox_switcher_checked {
+  z-index: 2;
+  position: absolute;
+  background: #ffffff;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  top: 2px;
+  bottom: 2px;
+  transform: translateX(18px);
+  transition: all 0.2s ease-in-out;
+}

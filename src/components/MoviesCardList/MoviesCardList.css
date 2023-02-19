@@ -1,0 +1,38 @@
+.cards {
+  display: grid;
+  list-style: none;
+  padding: 80px 0;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 60px 30px;
+  align-items: center;
+  margin: 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cards__pagination {
+  width: 100%;
+  display: flex;
+}
+
+.cards__more {
+  background-color: transparent;
+  border: 1px solid #e8e8e8;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  width: 320px;
+  height: 36px;
+  margin: 0 auto 80px;
+}
