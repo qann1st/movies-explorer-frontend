@@ -37,7 +37,7 @@ class DataApi extends Api {
 class MyApi extends Api {
   constructor() {
     super({
-      baseUrl: 'http://api.movies.qann1st.site/',
+      baseUrl: 'https://api.movies.qann1st.site/',
       headers: {
         'Content-Type': 'application/json',
       },

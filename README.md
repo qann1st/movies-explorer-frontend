@@ -2,7 +2,7 @@
 
 # Ссылки
 
-- [Ссылка на сайт](http://movies.qann1st.site/)
+- [Ссылка на сайт](https://movies.qann1st.site/)
 
 ## Запуск проекта
 

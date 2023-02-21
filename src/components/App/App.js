@@ -114,7 +114,6 @@ function App() {
             element={<Profile setCurrentUser={setCurrentUser} onLogout={handleLogout} />}></Route>
         </Route>
         <Route path="/" element={<Main isAuth={isAuth} />}></Route>
-        <Route path="/movies-explorer-frontend" element={<Main isAuth={isAuth} />}></Route>
         <Route path="/signin" element={<Login onLogin={handleLogin} />}></Route>
         <Route path="/signup" element={<Register onRegister={handleRegister} />}></Route>
         <Route path="*" element={<NotFound />}></Route>
