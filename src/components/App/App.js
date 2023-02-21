@@ -109,7 +109,9 @@ function App() {
                 isAuth={isAuth}
               />
             }></Route>
-          <Route path="/profile" element={<Profile onLogout={handleLogout} />}></Route>
+          <Route
+            path="/profile"
+            element={<Profile setCurrentUser={setCurrentUser} onLogout={handleLogout} />}></Route>
         </Route>
         <Route path="/" element={<Main isAuth={isAuth} />}></Route>
         <Route path="/signin" element={<Login onLogin={handleLogin} />}></Route>

@@ -57,6 +57,10 @@ class MyApi extends Api {
     return this._fetch('movies/' + id, 'DELETE');
   }
 
+  editProfile(body) {
+    return this._fetch('users/me', 'PATCH', body);
+  }
+
   saveMovie(body) {
     return this._fetch('movies', 'POST', body);
   }

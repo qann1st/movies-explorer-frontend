@@ -27,6 +27,7 @@
   line-height: 13px;
   justify-content: space-between;
   width: 410px;
+  position: relative;
 }
 
 .profile__about_element:first-of-type {
@@ -85,14 +86,22 @@
   opacity: 0.5;
 }
 
-@media screen and (max-width: 767px) {
-  .profile__name {
-    font-size: 24px;
-  }
+.profile__about_element_input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid #e8e8e8;
+  position: absolute;
+  right: 0;
+  outline: none;
 }
 
 @media screen and (max-width: 767px) {
   .profile__about_element {
     width: 260px;
+  }
+
+  .profile__name {
+    font-size: 24px;
   }
 }
