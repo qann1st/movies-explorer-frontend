@@ -118,3 +118,7 @@
   transform: translateX(18px);
   transition: all 0.2s ease-in-out;
 }
+
+.search__input_error::placeholder {
+  color: red;
+}

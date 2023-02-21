@@ -1,11 +1,25 @@
+.card__link {
+  text-decoration: none;
+}
+
 .card {
   width: 100%;
   min-width: none;
   position: relative;
+  text-decoration: none;
+  transform: scale(1);
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.07);
 }
 
 .card__image {
   display: block;
+  min-width: 320px;
+  height: 200px;
+  object-fit: cover;
   width: 100%;
   border-radius: 6px;
 }
@@ -16,6 +30,7 @@
   line-height: 16px;
   margin: 0;
   padding: 0;
+  color: #000;
 }
 
 .card__duration {
@@ -25,6 +40,23 @@
   color: #a0a0a0;
   margin: 0;
   padding: 0;
+}
+
+.card__remove {
+  background-image: url(../../images/remove.svg);
+  width: 21px;
+  height: 21px;
+  position: absolute;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 30px;
+  border: none;
+  right: 14px;
+  top: 14px;
+  width: 21px;
+  height: 21px;
+  opacity: 1;
 }
 
 .card__description {
@@ -52,6 +84,7 @@
   opacity: 1;
   transition: opacity 0.2s ease-in-out;
   cursor: pointer;
+  z-index: 3;
 }
 
 .card__btn_save:hover {

@@ -1,19 +1,41 @@
 import React from 'react';
 import './SearchForm.css';
 
-const SearchForm = () => {
+const SearchForm = ({ films, setFilteredFilms, setSearchValue }) => {
   const [inputValue, setInputValue] = React.useState('');
   const [isChecked, setIsChecked] = React.useState(false);
+  const [error, setError] = React.useState('Фильм');
+
+  function getFilteredFilms() {
+    if (isChecked) {
+      return films.filter((film) => film.duration < 40);
+    } else {
+      return films.filter((film) => film.duration > 40);
+    }
+  }
+
+  function handleSubmit(e) {
+    e.preventDefault();
+    if (inputValue !== '') {
+      setFilteredFilms(
+        getFilteredFilms().filter((film) => new RegExp(inputValue).test(film.nameRU)),
+      );
+      setSearchValue(e.target.value);
+      setError('Фильм');
+    } else {
+      setError('Введите ключевое слово');
+    }
+  }
 
   return (
     <div className="search">
-      <form className="search__form" onSubmit={() => console.log(inputValue)}>
+      <form className="search__form" onSubmit={(e) => handleSubmit(e)}>
         <input
           type="text"
           onChange={(e) => setInputValue(e.target.value)}
           value={inputValue}
-          placeholder="Фильм"
-          className="search__input"
+          placeholder={error}
+          className={`search__input ${error === 'Фильм' ? '' : 'search__input_error'}`}
         />
         <button type="submit" className="search__button"></button>
         <div className="search__checkbox">

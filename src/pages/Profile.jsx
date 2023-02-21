@@ -2,12 +2,12 @@ import React from 'react';
 import AboutProfile from '../components/AboutProfile';
 import Header from '../components/Header';
 
-const Profile = ({ name = 'Виталий' }) => {
+const Profile = ({ onLogout }) => {
   return (
-    <>
+    <div>
       <Header isAuth={true} />
-      <AboutProfile />
-    </>
+      <AboutProfile onLogout={onLogout} />
+    </div>
   );
 };
 

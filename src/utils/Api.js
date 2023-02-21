@@ -37,40 +37,42 @@ class DataApi extends Api {
 class MyApi extends Api {
   constructor() {
     super({
-      baseUrl: 'http://localhost:3050/',
+      baseUrl: 'http://localhost:4000/' || 'http://api.movies.qann1st.site/',
       headers: {
         'Content-Type': 'application/json',
       },
+      credentials: 'include',
     });
-    const token = localStorage.getItem('jwt');
-    if (token) {
-      this.setToken('Bearer ' + token);
-    }
   }
 
-  setToken(token) {
-    if (!this._options.headers) this._options.headers = {};
-    this._options.headers.authorization = token;
+  deleteCookie() {
+    return this._fetch('logout', 'POST');
   }
 
-  removeToken() {
-    if (this._options?.headers?.authorization) {
-      delete this._options?.headers?.authorization;
-    }
+  getSavedMovies() {
+    return this._fetch('movies');
   }
 
-  newUser(email, password) {
-    return this._fetch('signup', 'POST', { password: password, email: email });
+  removeMovie(id) {
+    return this._fetch('movies/' + id, 'DELETE');
   }
 
-  loginUser(email, password) {
-    return this._fetch('signin', 'POST', { password: password, email: email });
+  saveMovie(body) {
+    return this._fetch('movies', 'POST', body);
+  }
+
+  newUser(body) {
+    return this._fetch('signup', 'POST', body);
+  }
+
+  loginUser(body) {
+    return this._fetch('signin', 'POST', body);
   }
 
   authUser() {
-    return this._fetch('users/me', 'GET');
+    return this._fetch('users/me');
   }
 }
 
-export const authApi = new MyApi();
+export const myApi = new MyApi();
 export const api = new DataApi();
