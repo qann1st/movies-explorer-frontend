@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/movies-explorer-frontend/static/css/main.b9d99617.css",
-    "main.js": "/movies-explorer-frontend/static/js/main.8a0174bf.js",
+    "main.css": "/movies-explorer-frontend/static/css/main.d81f81eb.css",
+    "main.js": "/movies-explorer-frontend/static/js/main.870152ba.js",
     "static/js/787.5fef94a4.chunk.js": "/movies-explorer-frontend/static/js/787.5fef94a4.chunk.js",
     "static/media/Inter.var.woff2?v=3.19": "/movies-explorer-frontend/static/media/Inter.var.c2fe3cb2b7c746f7966a.woff2",
     "static/media/Inter-italic.var.woff2?v=3.19": "/movies-explorer-frontend/static/media/Inter-italic.var.30807be7abc48ba8c73c.woff2",
@@ -47,15 +47,16 @@
     "static/media/search.svg": "/movies-explorer-frontend/static/media/search.03edbb3e9bcbc5ac29ef.svg",
     "static/media/logo.svg": "/movies-explorer-frontend/static/media/logo.657cacaa9a04de75457c.svg",
     "static/media/menu.svg": "/movies-explorer-frontend/static/media/menu.08035af1e508cd8cfed5.svg",
+    "static/media/remove.svg": "/movies-explorer-frontend/static/media/remove.0a9dedd23fef929d9c6c.svg",
     "static/media/close.svg": "/movies-explorer-frontend/static/media/close.80dfd5bd01b8fe0a895e.svg",
     "static/media/link.svg": "/movies-explorer-frontend/static/media/link.2f133fb2a9b9c682afa2.svg",
     "static/media/saved.svg": "/movies-explorer-frontend/static/media/saved.a80bceb339a9d8f84be1.svg",
-    "main.b9d99617.css.map": "/movies-explorer-frontend/static/css/main.b9d99617.css.map",
-    "main.8a0174bf.js.map": "/movies-explorer-frontend/static/js/main.8a0174bf.js.map",
+    "main.d81f81eb.css.map": "/movies-explorer-frontend/static/css/main.d81f81eb.css.map",
+    "main.870152ba.js.map": "/movies-explorer-frontend/static/js/main.870152ba.js.map",
     "787.5fef94a4.chunk.js.map": "/movies-explorer-frontend/static/js/787.5fef94a4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b9d99617.css",
-    "static/js/main.8a0174bf.js"
+    "static/css/main.d81f81eb.css",
+    "static/js/main.870152ba.js"
   ]
 }
